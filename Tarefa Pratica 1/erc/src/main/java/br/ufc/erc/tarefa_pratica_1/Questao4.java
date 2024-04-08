@@ -25,10 +25,10 @@ public class Questao4 extends AbstractProcessor<CtClass<?>> {
 //		String qualifiedName = element.getQualifiedName();
 		double totalLoC = computeLoC(element);
 		double totalFanIn = computeFanIn(element);
-		computeFanOut(element);
-//		System.out.println(element.getSimpleName());
-//		System.out.println("  '-> Numero de linhas: "+ totalLoC);
-//		System.out.println("  '-> Numero de tipos que o referenciam: "+ totalFanIn);
+//		computeFanOut(element);
+		System.out.println(element.getSimpleName());
+		System.out.println("  '-> Numero de linhas: "+ totalLoC);
+		System.out.println("  '-> Numero de tipos que o referenciam: "+ totalFanIn);
 	}
 
 	private double computeLoC(CtClass<?> element) {
